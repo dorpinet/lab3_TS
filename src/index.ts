@@ -52,7 +52,7 @@ const third = repo.create(
     status: EntityStatus.Draft,
   }),
 );
-console.log(`Created | ID: ${third.id} | Status: ${third.status} | Title: ${third.title}`);
+console.log(`created | ID: ${third.id} | status: ${third.status} | title: ${third.title}`);
 
 const patch: UpdateDto<BookEntity> = { price: 590, status: EntityStatus.Archived };
 const updated = repo.update(first.id, patch);
